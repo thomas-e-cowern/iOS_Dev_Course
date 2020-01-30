@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FirstCourseApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frank1" translatesAutoresizingMaskIntoConstraints="NO" id="LPk-KZ-ahu">
+                                <rect key="frame" x="87" y="260" width="240" height="248"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="248" id="GHn-ko-7SE"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ig-ma-zGC">
+                                <rect key="frame" x="152" y="726" width="110" height="30"/>
+                                <state key="normal" title="Change Image"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frank Sinatra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0u-xU-g6P">
+                                <rect key="frame" x="142" y="134" width="131" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LPk-KZ-ahu" firstAttribute="top" secondItem="B0u-xU-g6P" secondAttribute="bottom" constant="98" id="FrH-40-Jp8"/>
+                            <constraint firstItem="8ig-ma-zGC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SJK-Jh-huY"/>
+                            <constraint firstItem="8ig-ma-zGC" firstAttribute="centerX" secondItem="LPk-KZ-ahu" secondAttribute="centerX" id="T2Y-lM-72c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8ig-ma-zGC" secondAttribute="bottom" constant="106" id="hfa-Bf-BPY"/>
+                            <constraint firstItem="8ig-ma-zGC" firstAttribute="centerX" secondItem="B0u-xU-g6P" secondAttribute="centerX" id="iXd-AP-8kl"/>
+                            <constraint firstItem="8ig-ma-zGC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="152" id="o3X-WS-sd5"/>
+                            <constraint firstItem="LPk-KZ-ahu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="oLQ-9K-Wd7"/>
+                            <constraint firstItem="LPk-KZ-ahu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="260" id="vce-oT-8VW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="106.47321428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="frank1" width="225" height="225"/>
+    </resources>
+</document>
