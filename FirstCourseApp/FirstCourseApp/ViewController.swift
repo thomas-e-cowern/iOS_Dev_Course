@@ -12,6 +12,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     
+    var imageName = "frank1"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -19,7 +21,17 @@ class ViewController: UIViewController {
 
     @IBAction func changeImageButtonPressed(_ sender: Any) {
         
-        imageView.image = UIImage.init(named: "frank2")
+        
+        
+        if imageName == "frank1" {
+            imageName = "frank2"
+            imageView.image = UIImage.init(named: imageName)
+        } else {
+            imageName = "frank1"
+            imageView.image = UIImage.init(named: imageName)
+        }
+        
+        
         
     }
     
