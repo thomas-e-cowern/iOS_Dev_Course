@@ -21,8 +21,7 @@ class ViewController: UIViewController {
 
     @IBAction func changeImageButtonPressed(_ sender: Any) {
         
-        
-        
+        //  Swaps out image 1 with image 2 based on current image
         if imageName == "frank1" {
             imageName = "frank2"
             imageView.image = UIImage.init(named: imageName)
@@ -30,9 +29,7 @@ class ViewController: UIViewController {
             imageName = "frank1"
             imageView.image = UIImage.init(named: imageName)
         }
-        
-        
-        
+
     }
     
 }
