@@ -14,4 +14,4 @@ userName = "Joseph"
 
 let userAge = 50
 
-print("Name: \(userName), Last Name: \(userSurname), Age: \(userAge)")
+print("Name: \(userName.uppercased()), Last Name: \(userSurname), Age: \(userAge)")
