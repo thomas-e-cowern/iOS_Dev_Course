@@ -10,8 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // Outlets
     @IBOutlet weak var imageView: UIImageView!
     
+    // Variables
     var imageName = "frank1"
     
     override func viewDidLoad() {
